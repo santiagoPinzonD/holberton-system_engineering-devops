@@ -1,2 +1,2 @@
-#!/bash/holberton
+#!/bin/holberton
 ls -la . .. /boot
