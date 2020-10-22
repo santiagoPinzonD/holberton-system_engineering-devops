@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # This script is displaying "Holberton School" 10 times
 
-for i in ` ls | cut -d "-" -f 2`;
+for i in var=$(find | cut -d "-" -f 2);
 do
     echo "$i"
 done
