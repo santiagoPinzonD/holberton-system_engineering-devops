@@ -7,7 +7,7 @@ echo "Hour: 0"
 while [ $i -le 59 ];
 do
     echo "$i"
-    if [ $count -eq 12 ] && [ $i == 59 ]; then
+    if [ $count -eq 13 ] && [ $i == 59 ]; then
         break
     fi
     case $i in
@@ -15,6 +15,7 @@ do
         let i=1
         echo "Hour: $count"
         let count=count+1
+        echo "$i"
     esac
     let i=i+1
 done
