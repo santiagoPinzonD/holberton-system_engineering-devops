@@ -150,9 +150,6 @@ typedef struct listint_s
 <p>Please use the &ldquo;short&rdquo; notation (don&rsquo;t use constants). Example: <code>O(nk)</code> or <code>O(wn)</code> should be written <code>O(n)</code>.
 If an answer is required within a file, all your answers files must have a newline at the end.</p>
 
-<h3>Tests</h3>
-
-<p>Here is a quick tip to help you test your sorting algorithms with big sets of random integers: <a href="/rltoken/KkFXByKWf55lTK32JnY62w" title="Random.org" target="_blank">Random.org</a></p>
 
   </article>
 
