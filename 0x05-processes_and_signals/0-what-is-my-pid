@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this is script that show the own id
+
+echo $$
