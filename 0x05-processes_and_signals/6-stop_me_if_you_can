@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# this is script that list the bash process
+
+pkill 4-to_infinity_and_beyond
