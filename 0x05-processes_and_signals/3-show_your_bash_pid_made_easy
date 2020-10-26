@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# this is script that list the bash process
+# shellcheck disable=SC2009
+
+pgrep=$(pgrep bash)
+for x in $pgrep
+do
+    echo "$x bash"
+done
