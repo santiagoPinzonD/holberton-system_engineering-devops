@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# this is script that list the bash process
+
+aux=$(pgrep -f 7-highlander)
+kill -9 "$aux"
