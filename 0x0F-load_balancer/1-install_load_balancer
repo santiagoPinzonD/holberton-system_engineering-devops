@@ -15,3 +15,4 @@ backend WEBSERVERS-01
         server 1894-web-01 35.227.48.225:80 check
         server 1894-web-02 34.74.219.148:80 check
 EOF
+sudo service haproxy restart
