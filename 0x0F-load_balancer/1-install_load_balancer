@@ -4,7 +4,7 @@
 sudo apt-get update
 sudo add-apt-repository ppa:vbernat/haproxy-1.6
 sudo apt-get install haproxy=1.6.\*
-cat >> vi /etc/haproxy/haproxy.cfg << EOF
+cat >> /etc/haproxy/haproxy.cfg << EOF
 
 frontend LOADBALANCER-01
     bind  *:80
