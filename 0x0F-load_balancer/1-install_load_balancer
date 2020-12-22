@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# install and configure HAproxy
+
+sudo apt-get update
+sudo add-apt-repository ppa:vbernat/haproxy-1.6
+sudo apt-get install haproxy=1.6.\*
+cat >> vi /etc/haproxy/haproxy.cfg << EOF
+
+frontend LOADBALANCER-01
+    bind  *:80
+    default_backend WEBSERVERS-01
+
+backend WEBSERVERS-01
+        balance roundrobin
+        server 1894-web-01 35.227.48.225:80 check
+        server 1894-web-02 34.74.219.148:80 check
+EOF
