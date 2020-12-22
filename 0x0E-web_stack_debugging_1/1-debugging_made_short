@@ -1,4 +1,3 @@
 #!/usr/bin/env bash
 # Fix the Nginx
 sudo sed -i 's/8080/80/g' /etc/nginx/sites-enabled/default
-kilall -9 nginx
