@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# script que change the user
+
+chmod 4 /etc/nginx/nginx.conf
+sudo -u nginx service nginx start
+exit
