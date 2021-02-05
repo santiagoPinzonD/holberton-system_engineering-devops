@@ -11,9 +11,9 @@ def top_ten(subreddit):
     URL = "https://www.reddit.com/r/{}/hot.json?limit=10"
     headers = {'User-Agent': 'URL'}
     response = requests.get(URL.format(subreddit), headers=headers)
-    if response.statud_code == 404:
-	    print("None")
-	    return 0
+    if response.status_code == 404:
+        print("None")
+        return 0
     post = response.json().get('data')
     children = post.get('children')
     for posts in children:
